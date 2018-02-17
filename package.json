@@ -10,7 +10,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "compodoc": "./node_modules/.bin/compodoc -p src/tsconfig.app.json -d docs/",
+    "compodoc": "compodoc -p src/tsconfig.app.json -d docs/",
     "build:prod": "ng build --prod --no-sourcemap --stats-json && npm run sw",
     "sw": "sw-precache --root=dist --config=sw-precache-config.js",
     "static-serve": "cd dist && live-server --port=4200 --host=localhost --entry-file=/index.html"
@@ -73,5 +73,17 @@
   },
   "description": "Taiga Marketplace",
   "main": "index.js",
-  "repository": "git@github.com:taigamkt/marketplace.git"
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/taigamkt/marketplace.git"
+  },
+  "bugs": {
+    "url": "https://github.com/taigamkt/marketplace/issues"
+  },
+  "homepage": "https://github.com/taigamkt/marketplace#readme",
+  "directories": {
+    "test": "test"
+  },
+  "keywords": [],
+  "author": ""
 }
